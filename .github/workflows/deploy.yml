@@ -18,28 +18,29 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Optional: set up Node. Remove if you're using plain HTML/CSS
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      # Install dependencies (skip if not using a JS build step)
-      - name: Install dependencies
+      # Install dependencies only if package.json exists
+      - name: Install dependencies (if needed)
         run: |
           if [ -f package.json ]; then
-            npm install
+            npm ci
           fi
 
-      # Build site (edit if you use another build command)
-      - name: Build
+      # Build if package.json exists; otherwise safely copy static files
+      - name: Build or copy
         run: |
           if [ -f package.json ]; then
             npm run build
           else
-            echo "No build step detected, copying root files"
-            mkdir -p dist
-            cp -R * dist/
+            echo "No build step detected. Copying static files..."
+            rm -rf dist
+            mkdir dist
+            shopt -s extglob
+            cp -R !(dist|.git|.github) dist/
           fi
 
       - name: Upload artifact
@@ -55,6 +56,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
