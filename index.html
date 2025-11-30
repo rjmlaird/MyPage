@@ -997,143 +997,102 @@
 
     </section><!-- /Services Section -->
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
+  <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section light-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Testimonials</h2>
+    <p>Hear from our clients and collaborators about their experiences working with us.</p>
+  </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="testimonials-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": 1,
-              "spaceBetween": 30,
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "navigation": {
-                "nextEl": ".swiper-button-next",
-                "prevEl": ".swiper-button-prev"
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
+    <div class="testimonials-slider swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": { "delay": 5000 },
+          "slidesPerView": 1,
+          "spaceBetween": 30,
+          "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true },
+          "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }
+        }
+      </script>
 
-            <div class="swiper-slide">
-              <div class="testimonial-slide" data-aos="fade-up" data-aos-delay="200">
-                <div class="testimonial-header">
-                  <div class="stars-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <div class="quote-icon">
-                    <i class="bi bi-quote"></i>
-                  </div>
-                </div>
-                <div class="testimonial-body">
-                  <p>"Outstanding service quality and innovative solutions have completely transformed our business processes, resulting in enhanced productivity and exceptional customer satisfaction throughout our organization."</p>
-                </div>
-                <div class="testimonial-footer">
-                  <div class="author-info">
-                    <img src="assets/img/person/person-f-12.webp" alt="Author" class="author-avatar">
-                    <div class="author-details">
-                      <h4>Sophia Martinez</h4>
-                      <span class="role">Operations Director</span>
-                      <span class="company">TechVision Corp</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-slide" data-aos="fade-up" data-aos-delay="300">
-                <div class="testimonial-header">
-                  <div class="stars-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <div class="quote-icon">
-                    <i class="bi bi-quote"></i>
-                  </div>
-                </div>
-                <div class="testimonial-body">
-                  <p>"Professional expertise and dedicated support have significantly improved our project delivery timelines while maintaining exceptional quality standards across all our initiatives."</p>
-                </div>
-                <div class="testimonial-footer">
-                  <div class="author-info">
-                    <img src="assets/img/person/person-m-14.webp" alt="Author" class="author-avatar">
-                    <div class="author-details">
-                      <h4>Michael Anderson</h4>
-                      <span class="role">Project Manager</span>
-                      <span class="company">InnovateTech Ltd</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-slide" data-aos="fade-up" data-aos-delay="400">
-                <div class="testimonial-header">
-                  <div class="stars-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <div class="quote-icon">
-                    <i class="bi bi-quote"></i>
-                  </div>
-                </div>
-                <div class="testimonial-body">
-                  <p>"Strategic collaboration and innovative thinking have enabled remarkable digital transformation, leading to increased efficiency and measurable business growth results."</p>
-                </div>
-                <div class="testimonial-footer">
-                  <div class="author-info">
-                    <img src="assets/img/person/person-f-11.webp" alt="Author" class="author-avatar">
-                    <div class="author-details">
-                      <h4>Jennifer Wilson</h4>
-                      <span class="role">Digital Strategy Lead</span>
-                      <span class="company">FutureScope Inc</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="swiper-navigation-wrapper">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-
-        </div>
-
+      <div class="swiper-wrapper" id="testimonial-slides">
+        <!-- Slides will be injected here via JS -->
       </div>
 
-    </section><!-- /Testimonials Section -->
+      <div class="swiper-navigation-wrapper">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+  </div>
+</section><!-- /Testimonials Section -->
+
+<script>
+  const testimonials = [
+    {
+      name: "Sophia Martinez",
+      role: "Operations Director",
+      company: "TechVision Corp",
+      avatar: "assets/img/person/person-f-12.webp",
+      quote: "Outstanding service quality and innovative solutions have completely transformed our business processes, resulting in enhanced productivity and exceptional customer satisfaction throughout our organization.",
+      rating: 5
+    },
+    {
+      name: "Michael Anderson",
+      role: "Project Manager",
+      company: "InnovateTech Ltd",
+      avatar: "assets/img/person/person-m-14.webp",
+      quote: "Professional expertise and dedicated support have significantly improved our project delivery timelines while maintaining exceptional quality standards across all our initiatives.",
+      rating: 5
+    },
+    {
+      name: "Jennifer Wilson",
+      role: "Digital Strategy Lead",
+      company: "FutureScope Inc",
+      avatar: "assets/img/person/person-f-11.webp",
+      quote: "Strategic collaboration and innovative thinking have enabled remarkable digital transformation, leading to increased efficiency and measurable business growth results.",
+      rating: 5
+    }
+  ];
+
+  const container = document.getElementById('testimonial-slides');
+
+  testimonials.forEach((t, index) => {
+    const stars = Array(t.rating).fill('<i class="bi bi-star-fill"></i>').join('');
+    const slide = document.createElement('div');
+    slide.classList.add('swiper-slide');
+    slide.innerHTML = `
+      <div class="testimonial-slide" data-aos="fade-up" data-aos-delay="${200 + index * 100}">
+        <div class="testimonial-header">
+          <div class="stars-rating">${stars}</div>
+          <div class="quote-icon"><i class="bi bi-quote"></i></div>
+        </div>
+        <div class="testimonial-body">
+          <p>"${t.quote}"</p>
+        </div>
+        <div class="testimonial-footer">
+          <div class="author-info">
+            <img src="${t.avatar}" alt="Author" class="author-avatar">
+            <div class="author-details">
+              <h4>${t.name}</h4>
+              <span class="role">${t.role}</span>
+              <span class="company">${t.company}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+    container.appendChild(slide);
+  });
+</script>
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
