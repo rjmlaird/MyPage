@@ -39,14 +39,16 @@ jobs:
             echo "No build step detected. Copying static files..."
             rm -rf dist
             mkdir dist
-            shopt -s extglob
-            cp -R !(dist|.git|.github) dist/
-          fi
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist
+            # Copy everything except dist/, .git/, .github/
+            find . -maxdepth 1 \
+              ! -name "dist" \
+              ! -name ".git" \
+              ! -name ".github" \
+              ! -name "." \
+              -exec cp -R {} dist/ \;
+
+          fi
 
   deploy:
     needs: build
