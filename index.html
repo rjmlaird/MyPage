@@ -997,32 +997,109 @@
 
     </section><!-- /Services Section -->
 
-  <!-- Testimonials Section -->
+<!-- Testimonials Section -->
 <section id="testimonials" class="testimonials section light-background">
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Testimonials</h2>
-    <p>Hear from our clients and collaborators about their experiences working with us.</p>
+    <p>Here’s what people say about working with me and my work in sustainable space marketing.</p>
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
     <div class="testimonials-slider swiper init-swiper">
+      <!-- Swiper Configuration -->
       <script type="application/json" class="swiper-config">
-        {
-          "loop": true,
-          "speed": 600,
-          "autoplay": { "delay": 5000 },
-          "slidesPerView": 1,
-          "spaceBetween": 30,
-          "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true },
-          "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }
+      {
+        "loop": true,
+        "speed": 600,
+        "autoplay": { "delay": 5000 },
+        "slidesPerView": 1,
+        "spaceBetween": 30,
+        "pagination": {
+          "el": ".swiper-pagination",
+          "type": "bullets",
+          "clickable": true
+        },
+        "navigation": {
+          "nextEl": ".swiper-button-next",
+          "prevEl": ".swiper-button-prev"
         }
+      }
+      </script>
+
+      <!-- JSON Data -->
+      <script type="application/json" id="testimonial-data">
+[
+  {
+    "content": "What I appreciated most is having Ryan as a continuous sparring partner for turning my ideas into reality. His proactive research was invaluable.",
+    "author": "Sebastian D. Marcu",
+    "position": "CEO",
+    "company": "Design & Data GmbH",
+    "avatar": "/images/people/SebastianDMarcu.jpg"
+  },
+  {
+    "content": "I had the pleasure to work with Ryan; his communications expertise, proactiveness, and attention to detail were invaluable when creating campaigns for new calls for proposals.",
+    "author": "Nil Angli",
+    "position": "Business Applications Officer",
+    "company": "European Space Agency",
+    "avatar": "/images/people/NilAngli.jpg"
+  },
+  {
+    "content": "I am very happy with the work Ryan Laird did for us. He delivered beyond the standard and was always looking for ways to improve our results. He is very knowledgeable on marketing issues, and has a very good understanding of Space to steer marketing efforts appropriately. Ryan has a deep network reaching to many of the targets of our marketing campaigns, and his writing style was focused and targeted.",
+    "author": "Gonzalo Martín de Mercado",
+    "position": "Business Development Officer",
+    "company": "European Space Agency",
+    "avatar": "/images/people/gonzalo.jpeg"
+  },
+  {
+    "content": "I have had the opportunity to appreciate Ryan’s work as communications manager for space projects and space related news as very professional. Ryan has always been reliable and provided high quality content.",
+    "author": "Rita Rinaldo",
+    "position": "Head of Projects and Studies Implementation Division",
+    "company": "European Space Agency",
+    "avatar": "/images/people/rita-rinaldo.jpg"
+  },
+  {
+    "content": "Ryan was a very helpful and productive intern and a huge help in many areas of our news production process. He rapidly got familiar with our complex procedures and excelled at delivering fast and high-quality material. He was also very good at making suggestions and going a bit beyond the tasks he was assigned. He is a hard worker and handled some stressful and demanding recent work periods very well.",
+    "author": "Richard Hook",
+    "position": "Public Information Officer",
+    "company": "European Southern Observatory",
+    "avatar": "/images/people/richardhook.webp"
+  },
+  {
+    "content": "Ryan [adapted to] pressures and demands of our busy working environment, working to tight and changing deadlines and covering a variety of tasks, from drafting announcements, science releases, and Pictures of the Week texts to writing scripts for our video podcasts and writing captions for our online image archive, all completed to a high standard. He demonstrated an ability to learn quickly, to understand the salient details of a story and to use his initiative to get work done.",
+    "author": "Lars Lindberg Christiansen",
+    "position": "Head of education and Public Outreach Department (ePOD)",
+    "company": "European Southern Observatory",
+    "avatar": "/images/people/lars.jpg"
+  },
+  {
+    "content": "I had the pleasure to work alongside Ryan at Bloodhound SSC. Ryan was involved in developing, communicating and delivering STEM-based workshops, all of which he performed admirably! He was a valuable asset to the team and carried out all of the above with energy and enthusiasm.",
+    "author": "Mike Ford",
+    "position": "Science Communicator",
+    "company": "Bloodhound SSC",
+    "avatar": "/images/people/mikeford.jpg"
+  },
+  {
+    "content": "As a key member of the Education Team Social Media Strategy Planning Group, Ryan was instrumental in helping drive the BLOODHOUND Education Social Media strategy forward. Never afraid to push the boundaries and very enthusiastic to implement, monitor and review working processes to ensure that the info at the point of delivery was up to date, scientifically accurate and differentiated to meet the needs of the many differing audiences. A pleasure to work with and a real asset to any team.",
+    "author": "Dawn Fitt",
+    "position": "Science Communicator",
+    "company": "Bloodhound SSC",
+    "avatar": "/images/people/dawnfitt.jpg"
+  },
+  {
+    "content": "When I arrived on the BLOODHOUND Project, Ryan was already a key part of the Education Team. He is one of the main writers of our education resources, producing really good, clear material which schools are able to use with the minimum of fuss. Lately he has taken on significant work in dealing with the wider Education Sector in bringing the BLOODHOUND message to them, not easy but he is doing an excellent job in this and he is a good guy as well!",
+    "author": "Derek Hull",
+    "position": "Science Communicator",
+    "company": "Bloodhound SSC",
+    "avatar": "/images/people/derekhull.jpeg"
+  }
+]
       </script>
 
       <div class="swiper-wrapper" id="testimonial-slides">
-        <!-- Slides will be injected here via JS -->
+        <!-- JS will inject slides here -->
       </div>
 
       <div class="swiper-navigation-wrapper">
@@ -1033,57 +1110,33 @@
     </div>
 
   </div>
+
 </section><!-- /Testimonials Section -->
 
 <script>
-  const testimonials = [
-    {
-      name: "Sophia Martinez",
-      role: "Operations Director",
-      company: "TechVision Corp",
-      avatar: "assets/img/person/person-f-12.webp",
-      quote: "Outstanding service quality and innovative solutions have completely transformed our business processes, resulting in enhanced productivity and exceptional customer satisfaction throughout our organization.",
-      rating: 5
-    },
-    {
-      name: "Michael Anderson",
-      role: "Project Manager",
-      company: "InnovateTech Ltd",
-      avatar: "assets/img/person/person-m-14.webp",
-      quote: "Professional expertise and dedicated support have significantly improved our project delivery timelines while maintaining exceptional quality standards across all our initiatives.",
-      rating: 5
-    },
-    {
-      name: "Jennifer Wilson",
-      role: "Digital Strategy Lead",
-      company: "FutureScope Inc",
-      avatar: "assets/img/person/person-f-11.webp",
-      quote: "Strategic collaboration and innovative thinking have enabled remarkable digital transformation, leading to increased efficiency and measurable business growth results.",
-      rating: 5
-    }
-  ];
-
+  // Inject testimonials from JSON into HTML
+  const testimonials = JSON.parse(document.getElementById('testimonial-data').textContent);
   const container = document.getElementById('testimonial-slides');
 
   testimonials.forEach((t, index) => {
     const stars = Array(t.rating).fill('<i class="bi bi-star-fill"></i>').join('');
     const slide = document.createElement('div');
-    slide.classList.add('swiper-slide');
+    slide.className = 'swiper-slide';
     slide.innerHTML = `
-      <div class="testimonial-slide" data-aos="fade-up" data-aos-delay="${200 + index * 100}">
+      <div class="testimonial-slide" data-aos="fade-up" data-aos-delay="${200 + index*100}">
         <div class="testimonial-header">
           <div class="stars-rating">${stars}</div>
           <div class="quote-icon"><i class="bi bi-quote"></i></div>
         </div>
         <div class="testimonial-body">
-          <p>"${t.quote}"</p>
+          <p>"${t.content}"</p>
         </div>
         <div class="testimonial-footer">
           <div class="author-info">
-            <img src="${t.avatar}" alt="Author" class="author-avatar">
+            <img src="${t.avatar}" alt="${t.author}" class="author-avatar">
             <div class="author-details">
-              <h4>${t.name}</h4>
-              <span class="role">${t.role}</span>
+              <h4>${t.author}</h4>
+              <span class="role">${t.position}</span>
               <span class="company">${t.company}</span>
             </div>
           </div>
